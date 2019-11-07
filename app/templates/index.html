@@ -2,24 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-        <script type="text/javascript">
+        <script type="text/javascript">  <!--//--><![CDATA[//><!--
             startList = function() {
                 if (document.all&&document.getElementById) {
                     navRoot = document.getElementById("menu");
                     var allli = navRoot.getElementsByTagName("li")
                     for (i=0; i<allli.length; i++) {
                         node = allli[i];
-                        node.onmouseover=function() {
-                            this.className+=" current";
-                        }
+                            node.onmouseover=function() {
+                                this.className+=" current";
+                            }
                         node.onmouseout=function() {
-                        this.className=this.className.replace(" current", "");
+                            this.className=this.className.replace(" current", "");
                         }
-                    }   
+                    }
                 }
             }
             window.onload=startList;
+            //--><!]]>
         </script>
+            
         <style type="text/css">
             body { font-family: Verdana; font-size: 12px; line-height: 1.5; }
             img { border-style: none; }
